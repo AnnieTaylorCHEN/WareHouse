@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-size: 3rem;
+  font-size: 7rem;
   font-weight: 700;
   font-stretch: condensed;
   color: hsla(0, 100%, 100%, 1);
@@ -43,6 +43,11 @@
   background-color: white;
 }
 
+.join {
+  width: 300px;
+  margin-left: 250px;
+}
+
 @media only screen and (max-width: 735px) {
   .about h1 {
     font-size: 6rem;
@@ -50,8 +55,13 @@
 }
 
 @media only screen and (max-width: 490px) {
+
+
   .about h1 {
     font-size: 4rem;
+    max-height: 100%;
+    height: 506px;
+    width: auto;
   }
 
   .about h3 {
@@ -60,5 +70,7 @@
 
   .about p {
     font-size: 1rem;
+    
   }
+
 }
