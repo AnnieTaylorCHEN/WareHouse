@@ -145,6 +145,7 @@ select {
 
 .product-item .price {
   color: hsla(0, 0%, 29%, 1);
+  font-weight: bold;
 }
 
 

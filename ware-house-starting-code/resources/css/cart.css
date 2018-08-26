@@ -7,6 +7,10 @@
   padding: 2rem 5rem 3.75rem 5rem;
 }
 
+.product-list-section h2 {
+  font-size: 1.4rem;
+}
+
 .shopping-cart {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -64,6 +68,11 @@ input {
 .total .description span{
   float: right;
   padding-bottom: 2rem;
+}
+
+.total .price {
+  font-weight: bold;
+  color: black;
 }
 
 #main .button {
