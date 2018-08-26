@@ -99,6 +99,7 @@ select {
 /* Reusable Component - Product List */
 
 .product-list-section {
+  display: flex;
   padding: 2rem 5rem 3.75rem 5rem;
 }
 
@@ -106,6 +107,7 @@ select {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 3.75rem;
+  grid-gap: 20px;
 }
 
 .product-category {
@@ -284,15 +286,35 @@ nav a:visted {
     justify-items: center;
   }
 
+  header img {
+    padding: 20px;
+  }
+
+  .search-bar {
+    margin: 10px;
+  }
+
   .cart {
     justify-self: auto;
+    margin: 10px;
+  }
+
+  nav a {
+    margin: 0 10px;
   }
 }
 
 @media only screen and (max-width: 700px) {
+    header img{
+      padding: 20px;
+    }
+
   nav {
     grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+    justify-items: start;
   }
+
 }
 
 /* Main Section */
@@ -345,11 +367,13 @@ footer a {
 
 @media only screen and (max-width: 810px) {
   footer {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   footer img {
     grid-column: 1 / span 3;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 }
 
@@ -362,5 +386,7 @@ footer a {
 
   footer img {
     grid-column: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 }
