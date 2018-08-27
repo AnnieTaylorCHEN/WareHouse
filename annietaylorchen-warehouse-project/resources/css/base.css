@@ -27,6 +27,16 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@viewport{
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
+@-ms-viewport{
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
+
 /* Site-Wide Styles */
 
 html {
@@ -280,39 +290,50 @@ nav a:visted {
   color: hsla(0, 0%, 29%, 1);
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1024px) {
+
+  nav a {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
   header {
     grid-template-columns: 1fr;
     justify-items: center;
   }
 
-  header img {
+  header img{
     padding: 20px;
+    
   }
-
+ 
   .search-bar {
-    margin: 10px;
+    margin: 15px;
+    font-size: 15vw;
   }
-
+  
   .cart {
-    justify-self: auto;
-    margin: 10px;
-  }
-
-  nav a {
-    margin: 0 10px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-    header img{
-      padding: 20px;
+    justify-self: end;
+    margin: 15px;
+    
     }
+
+  a .cart, .button {
+    padding: 0 100px;
+    font-size: 10vw;
+  }
 
   nav {
     grid-template-columns: 1fr;
     grid-row-gap: 15px;
     justify-items: start;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 15vw;
   }
 
 }
@@ -375,6 +396,8 @@ footer a {
     padding-top: 10px;
     padding-bottom: 20px;
   }
+
+ 
 }
 
 @media only screen and (max-width: 490px) {
@@ -388,5 +411,15 @@ footer a {
     grid-column: auto;
     padding-top: 10px;
     padding-bottom: 20px;
+  }
+
+  .links h4 {
+    font-size: 15vw;
+    padding: 15px;
+  }
+
+ footer a {
+    font-size: 12vw;
+    padding: 10px;
   }
 }

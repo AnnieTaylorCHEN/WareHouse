@@ -59,17 +59,16 @@
 
   .about h1 {
     font-size: 4rem;
-    max-height: 100%;
-    height: 506px;
-    width: auto;
+    
   }
 
   .about h3 {
-    font-size: 1.25rem;
+    font-size: 15vw;
   }
 
   .about p {
-    font-size: 1rem;
+    
+    font-size: 10vw;
     
   }
 
